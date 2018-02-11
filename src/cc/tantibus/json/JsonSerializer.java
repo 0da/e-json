@@ -49,8 +49,9 @@ class JsonSerializer {
             if (o == null) continue;
             if (first) first = false;
             else builder.append(',');
-            builder
+            builder.append('"')
                     .append(json.value())
+                    .append('"')
                     .append(":")
                     .append(o);
         }
