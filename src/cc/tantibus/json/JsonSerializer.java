@@ -50,7 +50,7 @@ class JsonSerializer {
             if (first) first = false;
             else builder.append(',');
             builder
-                    .append(json.value())
+                    .append(wrap(json.value()))
                     .append(":")
                     .append(o);
         }
