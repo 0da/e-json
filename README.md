@@ -53,7 +53,7 @@ JsonStruct is interface for:
 * JsonString
 * JsonNumber
   
-In this case JsonStruct is JsonObject or JsonArray. You can know this by using decode.isJsonObject();
+In this case JsonStruct is JsonObject or JsonArray. You can find out which one, by calling decode.isJsonObject();
 
 JsonStruct has the following methods:
 * asChar()
