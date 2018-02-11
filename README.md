@@ -69,7 +69,7 @@ JsonStruct has the following methods:
 * asArray() 
 * isJsonObject() 
 
-## To desiarilze object
+## To deserialize object
 Deserializable class should have default public constructor
 ```java
   final String json = "{\"person_id\":-1367319387,\"person_name\":\"John Doe\"}";
