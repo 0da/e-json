@@ -67,6 +67,7 @@ JsonStruct has the following methods:
 * asBigInteger() 
 * asBigDecimal() 
 * asArray() 
+* as(Class<T> clazz) 
 * isJsonObject() 
 
 ## To deserialize object
