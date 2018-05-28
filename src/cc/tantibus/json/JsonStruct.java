@@ -62,6 +62,14 @@ public interface JsonStruct {
         return BigDecimal.ZERO;
     }
 
+    default <T> T as(Class<T> clazz) {
+        try {
+            return JsonDeserializer.deserialize(this, clazz);
+        } catch (IllegalAccessException | InstantiationException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
     //  String.class
     //  toString()
 
